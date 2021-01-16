@@ -45,9 +45,9 @@ def init_db(update=False):
     db.session.add(Card('批发商品演示','666666666666666666',False,False))
     db.session.add(Card('重复卡密演示','666666666666666666',True,False))
     # 系统配置
-    db.session.add(Config('web_name','KAMIFAKA','网站名称',True))
-    db.session.add(Config('web_keyword','关键词、收录词汇','网站关键词',True))
-    db.session.add(Config('description','网站描述信息。。。','网站描述',True))
+    db.session.add(Config('web_name','青春科技站','网站名称',True))
+    db.session.add(Config('web_keyword','cf临时排位号、517327625','网站关键词',True))
+    db.session.add(Config('description','cf临时排位号','网站描述',True))
     db.session.add(Config('web_url','【预留不填】','网站地址，同步回调时调用',True))
     db.session.add(Config('web_bg_url','https://cdn.jsdelivr.net/gh/Baiyuetribe/yyycode@dev/colorfull.jpg','网站背景图片',True))
     db.session.add(Config('contact_us','<p>示例，请在管理后台>>网站设置里修改，支持HTML格式</p>','首页-联系我们',True))
@@ -56,7 +56,7 @@ def init_db(update=False):
     # db.session.add(Config('modal_notice','【计划中】','全局弹窗信息',True))
     db.session.add(Config('toast_notice','演示站随时更新，可优先体验新功能','首页滑动消息设置',True))
     db.session.add(Config('theme','list','主题',False))
-    db.session.add(Config('kamiFaka','https://github.com/Baiyuetribe/kamiFaka','Github项目地址，用于手动检测新版',False))
+    db.session.add(Config('weiwei','https://www.cnblogs.com/tomcat9','Github项目地址，用于手动检测新版',False))
     db.session.add(Config('kamiFaka_v','1.6','Github项目地址，用于手动检测新版',False))
 
     # 通知渠道 ：名称；对管理员开关；对用户开关；对管理员需要管理员账号；用户无；名称+config+管理员+admin_switch+user_switch
